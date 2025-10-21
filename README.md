@@ -1,14 +1,10 @@
 # Práctica 2: Sociograma DAW (MP07)
 
-Este proyecto es una aplicación web sencilla para el módulo **MP07 - Desenvolupament web en entorn servidor**. Su objetivo es simular un sociograma para una clase de DAW, recogiendo las preferencias de colaboración de los alumnos a través de un formulario web completo.
+Este proyecto es una aplicación web sencilla. El objetivo es simular un sociograma para una clase de DAW, recogiendo las preferencias de colaboración de los alumnos a través de un formulario web.
 
-Implementa un *backend* básico en PHP que recibe datos, los valida en el servidor y los persiste en un archivo JSON, que actúa como una base de datos ligera.
-
-(Aquí puedes añadir una captura de pantalla del formulario principal)
+Implemento un backend básico en PHP que recibe datos, los valida en el servidor y los persiste en un archivo JSON, que actúa como una base de datos ligera.
 
 ## ⚙️ Cómo Funciona
-
-El flujo del código se basa en la separación de responsabilidades entre la vista (el formulario) y la lógica (el procesador).
 
 1.  **Formulario (`index.php`)**: Es el punto de entrada. Carga la cabecera, el formulario (`_form.php`) y el pie de página. El formulario está preparado para la "rehidratación", es decir, para mostrar datos antiguos y errores si los hay.
 2.  **Envío (`POST`)**: Cuando el usuario pulsa "Enviar", el navegador empaqueta los datos y los envía por `POST` al archivo `process.php`.
